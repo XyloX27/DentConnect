@@ -1,0 +1,135 @@
+/* Custom Styles for DentConnect */
+:root {
+    --sky-blue: #87CEEB;
+    --light-purple: #E6E6FA;
+    --dark-purple: #9370DB;
+    --text-dark: #333;
+    --text-light: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: var(--text-dark);
+}
+
+/* Navbar customization */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: var(--dark-purple) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--dark-purple) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--sky-blue);
+    border-color: var(--sky-blue);
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #5fa6c9;
+    border-color: #5fa6c9;
+    color: var(--text-light);
+}
+
+.btn-secondary {
+    background-color: var(--light-purple);
+    border-color: var(--light-purple);
+    color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+    background-color: #c2b0e5;
+    border-color: #c2b0e5;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: var(--light-purple);
+    border-radius: 15px 15px 0 0 !important;
+    font-weight: bold;
+}
+
+/* Dashboard specific */
+.stat-card {
+    background: linear-gradient(135deg, var(--sky-blue), var(--light-purple));
+    color: var(--text-dark);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: var(--dark-purple);
+}
+
+/* Forms */
+.form-control:focus, .form-select:focus {
+    border-color: var(--sky-blue);
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25);
+}
+
+/* AI X-ray result styling */
+.ai-confidence {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    margin: 10px 0;
+}
+
+.ai-confidence-fill {
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--sky-blue);
+}
+
+.ai-finding-item {
+    background-color: var(--light-purple);
+    border-left: 4px solid var(--dark-purple);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid var(--sky-blue);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
